@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Document Object Model (DOM)</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>El Document Object Model (DOM)</h1>
+        <p class="subtitle">Guía informativa sobre el modelo de objetos del documento</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#definicion">Definición</a></li>
+            <li><a href="#caracteristicas">Características principales</a></li>
+            <li><a href="#objetivos">Objetivos y utilidad</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="definicion">
+            <h2>¿Qué es el DOM?</h2>
+            <p>
+                El <strong>Document Object Model</strong> (DOM), conocido en español como
+                <em>Modelo de Objetos del Documento</em>, Es el objeto basico del lado de cliente que se le proporcionana a aceeso
+                a la pagina web, el cual proporciona propiedades y metodos en el acceso a los obejtos de ventanas del navegador
+                <lu> 
+                    <li><strong> Document.body:</strong> Devuelve el elemento document</li>
+                    <li><strong> Document.title:</strong> Devuelve el elemento titulo de pagina</li>
+                    <li><strong> Document.images:</strong> es un array que representa una imagen por pagina</li>
+                    <li><strong> Document.bgcolor:</strong> Define color de fondo, definiendo el color en ingles</li>
+                </lo>
+            </p>
+            <div class="highlight-box">
+                <p>
+                    En términos simples, el DOM convierte el código HTML estático en una
+                    estructura de objetos que puede ser modificada en tiempo real por
+                    programadores mediante código HTML, lo que permite crear experiencias
+                    interactivas para el usuario.
+                </p>
+            </div>
+        </section>
+
+        <section id="caracteristicas">
+            <h2>Características principales</h2>
+
+            <article>
+                <h3>Estructura de árbol</h3>
+                <p>
+                    El DOM organiza los elementos del documento en una estructura jerárquica
+                    en forma de árbol. El nodo raíz corresponde al elemento
+                    <code>&lt;html&gt;</code>, del cual se desprenden todos los demás
+                    elementos como hijos y subnodos (Escarcena, s.f.).
+                </p>
+            </article>
+
+            <article>
+                <h3>Nodos</h3>
+                <p>
+                    Cada elemento, atributo y texto dentro del documento representa un
+                    <strong>nodo</strong>. El DOM define distintos tipos de nodos: nodos de
+                    elemento, nodos de texto, nodos de atributo, entre otros. Todos ellos
+                    forman parte del árbol del documento y pueden ser manipulados
+                    independientemente.
+                </p>
+            </article>
+
+            <article>
+                <h3>Independencia del lenguaje</h3>
+                <p>
+                    Aunque el DOM se asocia frecuentemente con JavaScript, es una interfaz
+                    que puede ser utilizada con cualquier lenguaje de programación que
+                    implemente sus especificaciones, como Python, Java o PHP (Programación de Páginas Web con JavaScript y
+                PHP).
+                </p>
+            </article>
+
+            <article>
+                <h3>Manipulación dinámica</h3>
+                <p>
+                    El DOM permite agregar, eliminar o modificar elementos y contenido de la
+                    página <strong>sin necesidad de recargar</strong> el documento completo,
+                    lo que es la base de las aplicaciones web modernas e interactivas.
+                </p>
+            </article>
+        </section>
+
+        <section id="objetivos">
+            <h2>Objetivos y utilidad en el desarrollo web</h2>
+
+            <ul class="objetivos-list">
+                <li>
+                    <strong>Acceso al contenido:</strong> El DOM permite leer y modificar el
+                    contenido de la página, como el texto dentro de un párrafo o el valor de
+                    un campo de formulario.
+                </li>
+                <li>
+                    <strong>Modificación de la estructura:</strong> Permite añadir o eliminar
+                    elementos HTML de forma dinámica según las necesidades de la aplicación.
+                </li>
+                <li>
+                    <strong>Manipulación de estilos:</strong> Mediante el DOM es posible
+                    cambiar las clases CSS y estilos en línea de los elementos para alterar
+                    su apariencia en tiempo de ejecución.
+                </li>
+                <li>
+                    <strong>Manejo de eventos:</strong> El DOM establece un modelo de eventos
+                    que responde a las acciones del usuario, como clics, pulsaciones de
+                    teclado y movimientos del ratón.
+                </li>
+                <li>
+                    <strong>Interactividad:</strong> Es la base para crear interfaces
+                    dinámicas y experiencias de usuario ricas sin depender únicamente del
+                    servidor.
+                </li>
+            </ul>
+        </section>
+
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <p>
+                <em>Programación de Páginas Web con JavaScript y
+                PHP</em>. Capítulos referenciados: pp. 40–44.
+                RA-MA Editorial. https://elibro.net/es/lc/itsqmet/titulos/222656
+            </p>
+           
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 &mdash; Actividad Autónoma &mdash; Semana 3</p>
+        <p>Desarrollo Web</p>
+    </footer>
+
+</body>
+</html>
